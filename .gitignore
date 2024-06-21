@@ -1,0 +1,7 @@
+
+/.idea
+/core/interface/__pycache__
+/core/interface/elements/__pycache__
+/core/interface/functions/__pycache__
+schema.png
+*.log
