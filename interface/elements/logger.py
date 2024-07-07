@@ -1,6 +1,6 @@
 import tkinter as tk
 from datetime import datetime
-from core.interface.elements.style import *
+from interface.elements.style import *
 
 
 class Logger(tk.Frame):

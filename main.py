@@ -1,8 +1,8 @@
 import tkinter as tk
 import logging
 
-from core.interface.gui import Gui
-from core.interface.elements.bssFrame import BssFrame
+from interface.gui import Gui
+from interface.elements.bssFrame import BssFrame
 
 logger = logging.getLogger()
 

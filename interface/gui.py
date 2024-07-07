@@ -2,10 +2,10 @@ import tkinter as tk
 import logging
 from tkinter import filedialog
 
-from core.interface.elements.style import *
-from core.interface.elements.menuBar import MenuBar
-from core.interface.elements.bssFrame import BssFrame
-from core.interface.elements.logger import Logger
+from interface.elements.style import *
+from interface.elements.menuBar import MenuBar
+from interface.elements.bssFrame import BssFrame
+from interface.elements.logger import Logger
 
 logger = logging.getLogger()
 
@@ -39,8 +39,8 @@ class Gui(tk.Tk):
         self._bottom_frame = tk.Frame(self, bg=BG_COLOR)
         self._bottom_frame.pack(side=tk.BOTTOM,fill="y")
 
-        self._log_frame = Logger(self._bottom_frame, bg=LOG_BGCOLOR)
-        self._log_frame.pack(side=tk.LEFT)
+        self.log_frame = Logger(self._bottom_frame, bg=LOG_BGCOLOR)
+        self.log_frame.pack(side=tk.LEFT)
 
         self._pbar_frame = tk.Frame(self._bottom_frame, bg=BG_COLOR)
         self._pbar_frame.pack()

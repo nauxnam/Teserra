@@ -1,10 +1,10 @@
 import tkinter as tk
 import logging
 
-from core.interface.elements.style import *
-from core.interface.elements import source
-from core.interface.elements import cloud
-from core.interface.elements import scheduler
+from interface.elements.style import *
+from interface.elements import srcdialog
+from interface.elements import cloud
+from interface.elements import scheduler
 
 
 logger = logging.getLogger()
@@ -29,7 +29,7 @@ class BssFrame(tk.Frame):
         # Selector
         self.select_label = tk.Label(self.backupbFrame, text="Backup Actions", bg=BG_COLOR, fg=FG_COLOR)
         self.select_label.grid(row=0,column=0)
-        self.selectb = tk.Button(self.backupbFrame, text="Select Source(s)", command=source.sourcesWindow)
+        self.selectb = tk.Button(self.backupbFrame, text="Select Source(s)", command=srcdialog.SourceDialog)
         self.selectb.grid(row=1,column=0,pady=2)
 
         # Sync

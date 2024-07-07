@@ -2,6 +2,7 @@
 # FONTS
 GLOBAL_FONT = ("Arial", 11, "normal")
 BOLD_FONT = ("Arial", 8, "bold")
+SHEADER_FONT = ("Arial", 10 , "normal")
 
 
 # COLORS

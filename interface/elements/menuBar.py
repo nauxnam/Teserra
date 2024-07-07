@@ -1,6 +1,6 @@
 import tkinter as tk
 
-from core.interface.elements.style import *
+from interface.elements.style import *
 
 def donothing():
     print('Done')
